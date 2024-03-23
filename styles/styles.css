@@ -2,10 +2,9 @@ body,
 html {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   height: 100vh;
+  flex-direction: column; /* Stack items vertically */
   overflow-x: hidden;
 }
 
@@ -17,4 +16,10 @@ html {
 
 canvas {
   border: 1px solid orange;
+}
+
+.canvas-intermediate{
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+
 }
