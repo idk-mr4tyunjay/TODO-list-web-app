@@ -1,0 +1,20 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.canvas-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50% 50%; /* Two rows, each taking 50% of the container height */
+}
+
+canvas {
+  border: 1px solid orange;
+}
