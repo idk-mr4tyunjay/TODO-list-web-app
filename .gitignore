@@ -12,7 +12,6 @@ dist
 dist-ssr
 *.local
 
-cube2.js
 cube3.js
 cube4.js
 
