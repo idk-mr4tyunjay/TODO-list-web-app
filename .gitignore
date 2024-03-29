@@ -12,7 +12,6 @@ dist
 dist-ssr
 *.local
 
-cube3.js
 cube4.js
 
 # Editor directories and files
