@@ -12,9 +12,6 @@ dist
 dist-ssr
 *.local
 
-cube5
-cube6
-
 
 # Editor directories and files
 .vscode/*

@@ -34,7 +34,7 @@ fontLoader.load('https://threejs.org/examples/fonts/helvetiker_regular.typeface.
   const textGeometry = new TextGeometry('Cube movement', {
     font: font,
     size: 0.5,
-    height: 0.2,
+    depth: 0.2, // Use depth instead of height
   });
   const textMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
   const textMesh = new THREE.Mesh(textGeometry, textMaterial);
