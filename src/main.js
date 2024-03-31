@@ -7,3 +7,4 @@ import { cube4 } from "./basic/cube4.js";
 
 import { cube5 } from "./intermediate/cube5.js";
 import { cube6 } from "./intermediate/cube6.js";
+import { cube7 } from "./intermediate/cube7.js";

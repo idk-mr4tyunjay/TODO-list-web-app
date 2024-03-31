@@ -23,7 +23,7 @@ const renderer = new THREE.WebGLRenderer({
 
 // Set the size of the renderer
 const canvasWidth = window.innerWidth;
-const canvasHeight = 0.8 * window.innerHeight;
+const canvasHeight = window.innerHeight;
 renderer.setSize(canvasWidth, canvasHeight);
 
 // Add ambient light to the scene
@@ -53,6 +53,8 @@ camera.position.z = 5;
 
 // Create an instance of OrbitControls
 const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableZoom = false; // Disable zooming
+
 
 // Load a font for the text
 const fontLoader = new FontLoader();

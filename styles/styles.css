@@ -23,3 +23,13 @@ canvas {
   flex-direction: column; /* Stack items vertically */
 
 }
+.button-container {
+  position: relative;
+}
+
+#shapeButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1; /* Ensure button is above canvas */
+}

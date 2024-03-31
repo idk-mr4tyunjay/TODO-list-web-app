@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 
+advanced/cube8.js
 
 # Editor directories and files
 .vscode/*
