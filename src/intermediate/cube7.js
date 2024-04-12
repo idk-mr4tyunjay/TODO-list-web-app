@@ -1,5 +1,8 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
+
 
 const shapes = ['cube', 'circle', 'triangle', 'sphere', 'rectangle'];
 
@@ -90,7 +93,18 @@ triangle.position.set(0, 0, 0);
 sphere.position.set(1, 0, 0);
 rectangle.position.set(2, 0, 0);
 
-
+const fontLoader = new FontLoader();
+fontLoader.load('https://threejs.org/examples/fonts/helvetiker_regular.typeface.json', function (font) {
+  const textGeometry = new TextGeometry('shape change', {
+    font: font,
+    size: 0.5,
+    depth: 0.2, // Use depth instead of height
+  });
+  const textMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
+  const textMesh = new THREE.Mesh(textGeometry, textMaterial);
+  textMesh.position.set(-2, 1, -1); // Set the position of the text
+  scene.add(textMesh); // Add the text to the scene
+});
 
 // Add button to switch shapes
 document.getElementById('shapeButton').addEventListener('click', nextShape);

@@ -18,10 +18,9 @@ canvas {
   border: 1px solid orange;
 }
 
-.canvas-intermediate{
+.canvas-intermediate {
   display: flex;
   flex-direction: column; /* Stack items vertically */
-
 }
 .button-container {
   position: relative;
@@ -33,3 +32,8 @@ canvas {
   left: 10px;
   z-index: 1; /* Ensure button is above canvas */
 }
+#scene-container {
+  width: 100vw;
+  height: 100vh;
+}
+
